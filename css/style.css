@@ -169,10 +169,6 @@ header {
     grid-area: img;
 }
 
-.noticias__imagenes:hover {
-    border-radius: 5rem;
-}
-
 /* Index__PreguntasFrecuentes */
 
 .faq {

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/amarFavicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="animate-wow/animate.min.css">
+    <script src="animate-wow/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <title>AMAR Latam</title>
 </head>
 <body>
@@ -13,7 +18,7 @@
 <!-- Inicio de la cabecera (logo + nav) -->
     <header class="header">
         <div id="logo">
-            <img class="logo" src="assets/img/logoAmar.svg" alt="logo">
+            <img class="logo wow animate__animated animate__jackInTheBox" src="assets/img/logoAmar.svg" alt="logo">
         </div>
 
         <nav class="nav">
@@ -29,24 +34,24 @@
 
 <!-- Inicio del contenido -->
     <main class="index__main">
-        <h1 class="index__h1">ASOCIACIÓN DE MALFORMACIONES ANORRECTALES</h1>
-        <p class="index__p">Ayudamos a los padres y pacientes a resolver los
+        <h1 class="index__h1 wow animate__animated animate__flipInX">ASOCIACIÓN DE MALFORMACIONES ANORRECTALES</h1>
+        <p class="index__p wow animate__animated animate__lightSpeedInLeft">Ayudamos a los padres y pacientes a resolver los
             problemas relacionados con las malformaciones
             anorrectales (MAR) y a las relacionadas con estas.</p>
-        <a href="pages/contact.html"><button class="index__contacto">Contacto</button></a>
+        <a href="pages/contact.html"><button class="index__contacto wow animate__animated animate__lightSpeedInLeft">Contacto</button></a>
     </main>
 
 <!-- Noticias -->
     <section class="noticias">
-        <h2 class="noticias__h2">NOTICIAS</h2>
+        <h2 class="noticias__h2 wow animate__animated">NOTICIAS</h2>
             <div class="articulos">
                 <article class="noticias__articulo1">
                     <h3 class="noticias__h3">Reuniones Amar</h3>
                     <p class="noticias__p">En el marco del lanzamiento de la asociación comenzaremos a conocernos mediante reuniones por Zoom donde las familias tendrán una espacio para contar sus historias e involucrar especialistas.</p>
-                    <img class="noticias__imagenes" src="assets/img/videollamada.jpg" alt="Hija y madre haciendo una videollamada" width="500">
+                    <img class="noticias__imagenes wow animate__animated animate__backInRight" src="assets/img/videollamada.jpg" alt="Hija y madre haciendo una videollamada" width="500">
                 </article>
                 <article class="noticias__articulo2">
-                    <img class="noticias__imagenes" src="assets/img/manoPadresHijos.jpg" alt="Padres e hijos se dan las manos" width="500">
+                    <img class="noticias__imagenes wow animate__animated animate__backInLeft" src="assets/img/manoPadresHijos.jpg" alt="Padres e hijos se dan las manos" width="500">
                     <h3 class="noticias__h3">Nace Amar Latinoamérica</h3>
                     <p class="noticias__p">Las malformaciones anorrectales son defectos congénitos que suelen darse en un bajo porcentaje de niños, por esta razón no hay mucha información ni acceso a especialistas profesionales en la materia. Sin embargo, nace AMAR para poder brindar apoyo y generar una comunidad entre pacientes con MAR y familias.</p>
                  </article>
@@ -54,7 +59,7 @@
     </section>
 
 <!-- Preguntas frecuentes -->
-<section class="faq">
+<section class="faq wow animate__animated animate__fadeInUp">
     <h2 class="faq__h2">Preguntas frecuentes</h2>
     <article>
         <h3 class="faq__h3">¿Quién está en riesgo de malformaciones anorrectales?</h3>
@@ -75,7 +80,7 @@
 
 <!-- Redes sociales y suscripcion a news -->
 <section class="redes">
-    <div>
+    <div class="wow animate__animated animate__rotateInUpLeft">
         <h2 class="redes__h2">¡Seguinos en redes!</h2>
         <a href="NoTenemosRedes.html" target="_blank"><div class="redes__fb"></div></a>
         
@@ -84,7 +89,7 @@
         <a href="NoTenemosRedes.html" target="_blank"><div class="redes__wpp"></div><a>
     </div>
 
-    <aside class="boton__suscripcion">
+    <aside class="boton__suscripcion wow animate__animated animate__rotateInUpRight">
         <h3 class="redes__h2--suscripcion" >Suscribite a nuestro newsletter trimestral</h3>
         <a href="NoTenemosNews.html" target="_blank"><button class="index__contacto">Suscribite!</button></a>
     </aside>

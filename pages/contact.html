@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/amarFavicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../animate-wow/animate.min.css">
+    <script src="../animate-wow/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <title>AMAR Latam - Contacto</title>
 </head>
 <body>
@@ -13,7 +18,7 @@
     <header class="header">
         <div id="logo">
              <a href="../index.html">
-             <img class="logo" src="../assets/img/logoAmar.svg" alt="logo" href="../index.html">
+             <img class="logo wow animate__animated animate__jackInTheBox" src="../assets/img/logoAmar.svg" alt="logo" href="../index.html">
              </a>
         </div>
 
@@ -30,10 +35,10 @@
 
     <!-- Inicio del contenido de la pagina -->
     <section>
-        <h1 class="h1General">¡Envianos tu mensaje!</h1>
+        <h1 class="h1General h1General wow animate__animated animate__flipInX">¡Envianos tu mensaje!</h1>
 
     <!--Formulario de contacto-->
-        <form class="form" action="https://formspree.io/f/xeqnbozv" method="post">
+        <form class="form wow animate__animated animate__fadeInUp" action="https://formspree.io/f/xeqnbozv" method="post">
             <label class="pGeneral" for="nombre">Nombre completo:</label>
             <input class="input" type="text" name="nombre" id="nombre" required>
             <label class="pGeneral" for="email">Email:</label>
@@ -55,7 +60,7 @@
 
     <!-- Redes sociales y suscripcion a news -->
     <section class="redes">
-        <div>
+        <div class="wow animate__animated animate__rotateInUpLeft">
             <h2 class="redes__h2">¡Seguinos en redes!</h2>
             <a href="NoTenemosRedes.html" target="_blank"><div class="redes__fb"></div></a>
             
@@ -64,7 +69,7 @@
             <a href="NoTenemosRedes.html" target="_blank"><div class="redes__wpp"></div><a>
         </div>
     
-        <aside>
+        <aside class="wow animate__animated animate__rotateInUpRight">
             <h3 class="redes__h2" >Suscribite a nuestro newsletter trimestral</h3>
             <a href="NoTenemosNews.html" target="_blank"><button class="index__contacto">Suscribite!</button></a>
         </aside>
