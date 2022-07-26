@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/amarFavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>AMAR Latam - Contacto</title>
+</head>
+<body>
+    <!-- Inicio de la cabecera (logo + nav) -->
+    <header class="header">
+        <div id="logo">
+             <a href="../index.html">
+             <img class="logo" src="../assets/img/logoAmar.svg" alt="logo" href="../index.html">
+             </a>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav__lista">
+                <li class="nav__item"><a class="nav__enlace" href="../index.html">Inicio</a></li>
+                <li class="nav__item"><a class="nav__enlace" href="../pages/mar.html">M.A.R</a></li>
+                <li class="nav__item"><a class="nav__enlace" href="../pages/about.html">Quiénes Somos</a></li>
+                <li class="nav__item"><a class="nav__enlace" href="../pages/historias.html">Historias</a></li>
+                <li class="nav__item nav__item--buttom"><a class="nav__enlace nav__enlace--buttom" href="../pages/contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Inicio del contenido de la pagina -->
+    <section>
+        <h1 class="h1General">¡Envianos tu mensaje!</h1>
+
+    <!--Formulario de contacto-->
+        <form class="form" action="https://formspree.io/f/xeqnbozv" method="post">
+            <label class="pGeneral" for="nombre">Nombre completo:</label>
+            <input class="input" type="text" name="nombre" id="nombre" required>
+            <label class="pGeneral" for="email">Email:</label>
+            <input class="input" type="email" name="email" id="email" required>
+            <label class="pGeneral" for="mensaje">Mensaje:</label> <br>
+            <textarea  class="input" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+            <label class="pGeneral" for="asesoramiento">¿Necesitas asesoramiento por un caso de M.A.R cercano?</label>
+            <div class="form__input pGeneral">
+            <input class="inputRadio" type="radio" id="no" name="asesoramiento" value="Yes">
+       
+            <label for="no">Si</label>
+            <input class="inputRadio" type="radio" id="yes" name="asesoramiento" value="No">
+            <label for="yes">No</label>
+        </div>
+            <input class="botonEnviar" type="submit" value="Enviar">
+        </form>
+    
+    </section>
+
+    <!-- Redes sociales y suscripcion a news -->
+    <section class="redes">
+        <div>
+            <h2 class="redes__h2">¡Seguinos en redes!</h2>
+            <a href="NoTenemosRedes.html" target="_blank"><div class="redes__fb"></div></a>
+            
+            <a href="NoTenemosRedes.html" target="_blank"><div class="redes__tw"></div></a>
+          
+            <a href="NoTenemosRedes.html" target="_blank"><div class="redes__wpp"></div><a>
+        </div>
+    
+        <aside>
+            <h3 class="redes__h2" >Suscribite a nuestro newsletter trimestral</h3>
+            <a href="NoTenemosNews.html" target="_blank"><button class="index__contacto">Suscribite!</button></a>
+        </aside>
+    </section>
+
+<!-- Inicio del footer -->
+<footer class="footer">
+    <p>© 2022 AMAR Latam. Todos los derechos reservados.</p>
+    <a href="politicas.html" target="_blank">
+        <p class="politics">
+            Políticas de privacidad
+        </p>
+    </a>
+</footer>
+
+</body>
+</html>
