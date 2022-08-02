@@ -649,6 +649,9 @@ header {
 /* Mobile Responsive Generales (mobile first)*/
 
 @media (min-width: 768px) {
+
+ /* Header */
+
     header {
         display: flex;
         flex-direction: row;
@@ -679,6 +682,8 @@ header {
         font-size: 1rem;
         padding: 0.5rem;
     }
+
+/* Generales */
     
     .video__medidas {
         width: 100%;
@@ -708,6 +713,9 @@ header {
 }
 
 @media (min-width: 991px) {
+
+ /* Header */
+
     .nav__lista {
         display: flex;
         flex-direction: row;
