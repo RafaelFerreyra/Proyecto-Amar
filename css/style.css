@@ -21,6 +21,10 @@ a:hover {
     color: #18B6BD;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 /* Header */
 
 header {
@@ -404,11 +408,17 @@ header {
 }
 
 .audioGeneral {
+    width: 100%;
     display: flex;
     justify-content: center;
     border-radius: 10rem;
     padding: 1rem;
     grid-area: audioGen;
+    border: #18B6BD 1px solid;
+}
+
+.mejs-container .mejs-controls .mejs-time span {
+    color: #333333 !important;
 }
 
 .historiasArticulo1 {
@@ -620,6 +630,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
+        justify-content: center;
         padding: 1rem;
     }
 
@@ -682,8 +693,6 @@ header {
     .historiasArticulo1 {
         display: grid;
         padding: 2rem;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
         grid-template-areas: 
         "h2Gen imGen" 
         "h3Gen imGen"
