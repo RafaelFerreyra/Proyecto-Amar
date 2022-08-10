@@ -1,0 +1,226 @@
+@media (max-width: 768px) {
+    /* Header */
+  
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 0.2rem;
+    }
+  
+    .navbar-toggler {
+      border: 2px solid $colorPrincipal;
+      border-radius: 2rem;
+    }
+  
+    .nav__lista {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0.2rem;
+    }
+  
+    .nav__item {
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .navbar > .container-fluid {
+      justify-content: flex-end;
+    }
+  
+    .navbar-toggler {
+      color: white;
+    }
+  
+    .logo {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 80%;
+    }
+  
+    /* Index Main */
+  
+    .index__main {
+      padding: 4rem;
+      border-radius: 100rem;
+    }
+  
+    .index__h1 {
+      font-size: 1rem;
+      width: 100%;
+    }
+  
+    .index__p {
+      font-size: 0.80rem;
+      width: 100%;
+    }
+  
+    /* Noticias */
+  
+    .noticias__articulo1, .noticias__articulo2 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "h3" "img" "p";
+    }
+  
+    .articulos {
+      padding: 0.5rem;
+      margin: 0.5rem;
+    }
+  
+    .noticias__h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      margin: 0.5rem;
+    }
+  
+    .noticias__p {
+      font-size: 1rem;
+      margin: 0.5rem;
+    }
+  
+    .noticias__imagenes, .imgGeneral {
+      width: 100%;
+    }
+  
+    /* Faq */
+  
+    .faq {
+      display: grid;
+      grid-template: 1fr / 1fr;
+      justify-content: space-between;
+      height: 100%;
+      padding: 2rem 2rem 2em 2rem;
+      margin: 1rem;
+    }
+  
+    .faq__h2 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+  
+    /* redes y suscribite */
+  
+    .redes {
+      display: grid;
+      grid-template: 1fr / 1fr;
+      text-align: center;
+    }
+  
+    .redes__h2--suscripcion {
+      text-align: center;
+      font-size: 1.5rem;
+      padding-top: 1.5rem;
+    }
+  
+    .boton__suscripcion {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    /* Footer */
+  
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+  
+    .politics {
+      color: #ffffff;
+      text-decoration: none;
+      padding-top: 1rem;
+  
+      &:hover {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  /* Mobile Responsive Generales (mobile first)*/
+  
+  @media (min-width: 768px) {
+    /* Header */
+  
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 0.2rem;
+    }
+  
+    .navbar-toggler {
+      border: 2px solid $colorPrincipal;
+      border-radius: 2rem;
+      color: white;
+    }
+  
+    .nav__lista {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0.2rem;
+    }
+  
+    .nav__item {
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  
+    /* Generales */
+  
+    .video__medidas {
+      width: 100%;
+      height: 40rem;
+      border-radius: 5rem;
+    }
+  
+    .imgGeneral__bigScreen {
+      display: inline-block;
+    }
+  
+    .historiasArticulo1 {
+      display: grid;
+      padding: 2rem;
+      grid-template-areas: "h2Gen imGen" "h3Gen imGen" "pGen imGen" "pGen2 imGen" "audioGen imGen";
+    }
+  
+    .input {
+      width: 40%;
+    }
+  }
+  
+  @media (min-width: 991px) {
+    /* Header */
+  
+    .nav__lista {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 0.2rem;
+    }
+  
+    .nav__item {
+      display: flex;
+      font-size: 1rem;
+      padding: 2rem;
+    }
+  
+    .navbar-toggler {
+      color: white;
+    }
+  }

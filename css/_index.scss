@@ -1,0 +1,128 @@
+.index__main {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    padding: 8rem;
+    background-image: url('../assets/img/nenaFelizPortada.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50rem;
+  }
+  
+  .index__h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    width: 50%;
+  }
+  
+  .index__p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    width: 50%;
+  }
+  
+  .index__contacto {
+    display: flex;
+    background-color: $colorPrincipal;
+    border-radius: 0.75rem;
+    padding: 0.75rem 2rem 0.75rem 2rem;
+    align-items: center;
+    height: 1rem;
+    color: azure;
+    font-family: $fuentePrincipal;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 0rem;
+  
+    &:hover {
+      font-family: $fuentePrincipal;
+      font-weight: 600;
+      text-decoration: underline solid 0.15rem $colorPrincipal;
+    }
+  }
+  
+  /* Index__Noticias */
+  
+  .noticias {
+    margin-bottom: 2rem;
+  }
+  
+  .noticias__h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $colorPrincipal;
+  }
+  
+  .articulos {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .noticias__articulo1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "h3 img" "p img";
+  }
+  
+  .noticias__articulo2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img h3" "img p";
+  }
+  
+  .noticias__h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1c2122;
+    padding: 1rem;
+    margin: 1rem;
+    grid-area: h3;
+  }
+  
+  .noticias__p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8B8B8B;
+    margin: 1rem;
+    grid-area: p;
+  }
+  
+  .noticias__imagenes {
+    border-radius: 10rem;
+    grid-area: img;
+  }
+  
+  /* Index__PreguntasFrecuentes */
+  
+  .faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    background-color: $colorPrincipal;
+    color: #ffffff;
+    padding: 0.5rem 2rem 2rem 2rem;
+    margin: 1.5rem;
+    border-radius: 5rem;
+  }
+  
+  .faq__h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .faq__h3 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+  }

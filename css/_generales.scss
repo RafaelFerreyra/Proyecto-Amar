@@ -1,0 +1,131 @@
+.h1General {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $colorPrincipal;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .h2General__celeste {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:$colorPrincipal ;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    grid-area: h2Gen;
+  }
+  
+  .h3General__celeste {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $colorPrincipal;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    grid-area: h3Gen;
+  }
+  
+  .h3General {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .pGeneral {
+    font-family: $fuentePrincipal;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8B8B8B;
+    margin: 0.5rem;
+    grid-area: pGen;
+  }
+  
+  .pGeneral2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8B8B8B;
+    margin: 0.5rem;
+    grid-area: pGen2;
+  }
+  
+  .cuadranteGeneral {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    background-color: $colorPrincipal;
+    color: #ffffff;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 1rem;
+    border-radius: 5rem;
+  }
+  
+  .listaGeneral {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $colorPrincipal;
+    padding: 1rem;
+  }
+  
+  .listaGeneral__items {
+    padding: 1rem;
+    display: flex;
+    font-family: $fuentePrincipal;
+    flex-wrap: wrap;
+  }
+  
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .video__medidas {
+    width: 100%;
+    height: 15rem;
+    border-radius: 5rem;
+  }
+  
+  .imgGeneral {
+    display: flex;
+    justify-content: center;
+    border-radius: 10rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  
+  .imgGeneral__bigScreen {
+    display: flex;
+    justify-content: center;
+    border-radius: 10rem;
+    grid-area: img;
+    padding: 1rem;
+    display: none;
+    grid-area: imGen;
+  }
+  
+  .audioGeneral {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10rem;
+    padding: 1rem;
+    grid-area: audioGen;
+    border: $colorPrincipal 1px solid;
+  }
+  
+  .mejs-container .mejs-controls .mejs-time span {
+    color: #333333 !important;
+  }
+  
+  .historiasArticulo1 {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-areas: "h2Gen" "h3Gen" "pGen" "pGen2" "audioGen";
+  }

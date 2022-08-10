@@ -1,0 +1,56 @@
+/* Variables */
+$colorPrincipal: #18B6BD;
+$fuentePrincipal: 'Montserrat', sans-serif;
+
+
+/* Generales */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,8BQAzQwVETtFWGmAFZjAwNSYA7M4EczfocpPa2kZ6AiC1tVQuAhJTRjLG5Nkk4QqFWHxiKBdi6RuUFjC5zMhvhUyK7tatMA=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: $fuentePrincipal;
+}
+
+a {
+  font-family: $fuentePrincipal;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: #18B6BD;
+  }
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* Header */
+
+@import "header";
+
+/* Index__Main */
+
+@import "index";
+
+/* Redes y footer */
+
+@import "footer";
+
+/* Paginas generales*/
+
+@import "generales";
+
+/* Contacto*/
+
+@import "contacto";
+
+/* MediaQueries - Responsive*/
+
+@import "mediaqueries";

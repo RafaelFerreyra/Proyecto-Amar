@@ -1,0 +1,47 @@
+header {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+  }
+  
+  .logo {
+    height: 10rem;
+  }
+  
+  .nav__lista {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .nav__item {
+    display: flex;
+    font-size: 1rem;
+    padding: 2rem;
+  }
+  
+  .navbar > .container-fluid {
+    justify-content: flex-end;
+  }
+  
+  .nav__enlace {
+    font-family: $fuentePrincipal;
+    color: #8B8B8B;
+    font-weight: 600;
+  
+    &:hover {
+      font-family: $fuentePrincipal;
+      font-weight: 500;
+      text-decoration: underline solid $colorPrincipal 3px;
+      color: $colorPrincipal;
+    }
+  }
+  
+  .nav__item--buttom .nav__enlace--buttom {
+    display: flex;
+    background-color: $colorPrincipal;
+    border-radius: 1.5rem;
+    padding: 0.75rem 2rem 0.75rem 2rem;
+    align-items: center;
+    height: 0.75rem;
+    color: azure;
+  }
+  

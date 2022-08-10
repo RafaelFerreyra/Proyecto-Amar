@@ -1,0 +1,83 @@
+.redes {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem;
+    justify-content: space-around;
+  }
+  
+  .redes__about {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    text-align: center;
+  }
+  
+  .redes__h2, .redes__h2--suscripcion {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $colorPrincipal;
+    margin-bottom: 1.5rem;
+  }
+  
+  .redes__fb {
+    background-image: url('../assets/icons/fb.png');
+    width: 2.5rem;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0.5rem;
+  
+    &:hover {
+      background-image: url('../assets/icons/fbH.png');
+    }
+  }
+  
+  .redes__tw {
+    background-image: url('../assets/icons/tw.png');
+    width: 2.5rem;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0.5rem;
+  
+    &:hover {
+      background-image: url('../assets/icons/twH.png');
+    }
+  }
+  
+  .redes__wpp {
+    background-image: url('../assets/icons/wpp.png');
+    width: 2.5rem;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0.5rem;
+  
+    &:hover {
+      background-image: url('../assets/icons/wppH.png');
+    }
+  }
+  
+  /* Footer */
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: $colorPrincipal;
+    color: #ffffff;
+    font-family: $fuentePrincipal;
+    font-weight: 400;
+    border-radius: 1.5rem;
+    margin: 0.5rem;
+  }
+  
+  .politics {
+    color: #ffffff;
+    text-decoration: none;
+  
+    &:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
