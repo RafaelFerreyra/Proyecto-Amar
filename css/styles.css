@@ -316,10 +316,11 @@ header {
 }
 
 .pGeneral {
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   color: #8B8B8B;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
   margin: 0.5rem;
   grid-area: pGen;
 }
@@ -328,6 +329,7 @@ header {
   font-size: 1rem;
   font-weight: 600;
   color: #8B8B8B;
+  text-align: left;
   margin: 0.5rem;
   grid-area: pGen2;
 }

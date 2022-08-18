@@ -29,14 +29,14 @@
   }
   
   .pGeneral {
-    @include textoGeneral(map-get($estilos, 1rem), 600, #8B8B8B);
+    @include textoGeneral(map-get($estilos, 1rem), 600, #8B8B8B, left);
     font-family: $fuentePrincipal;
     margin: map-get($estilos, 0.5rem);
     grid-area: pGen;
   }
   
   .pGeneral2 {
-    @include textoGeneral(map-get($estilos, 1rem), 600, #8B8B8B);
+    @include textoGeneral(map-get($estilos, 1rem), 600, #8B8B8B, left);
     margin: map-get($estilos, 0.5rem);
     grid-area: pGen2;
   }
