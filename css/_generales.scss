@@ -36,8 +36,7 @@
   }
   
   .pGeneral2 {
-    @include textoGeneral(map-get($estilos, 1rem), 600, #8B8B8B, left);
-    margin: map-get($estilos, 0.5rem);
+    @extend .pGeneral;
     grid-area: pGen2;
   }
   
