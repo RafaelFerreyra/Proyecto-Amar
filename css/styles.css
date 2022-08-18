@@ -284,17 +284,17 @@ header {
   font-size: 2rem;
   font-weight: 700;
   color: #18B6BD;
-  margin-bottom: 0.5rem;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .h2General__celeste {
   font-size: 1.5rem;
   font-weight: 600;
   color: #18B6BD;
+  text-align: center;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
-  text-align: center;
   grid-area: h2Gen;
 }
 
@@ -302,8 +302,8 @@ header {
   font-size: 1rem;
   font-weight: 600;
   color: #18B6BD;
-  margin-bottom: 0.5rem;
   text-align: center;
+  margin-bottom: 0.5rem;
   grid-area: h3Gen;
 }
 
@@ -311,8 +311,8 @@ header {
   font-size: 1.5rem;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 1.5rem;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .pGeneral {

@@ -5,6 +5,12 @@
 $colorPrincipal: #18B6BD;
 $fuentePrincipal: 'Montserrat', sans-serif;
 
+$estilos: (
+  1rem: 1rem,
+  0.5rem: 0.5rem,
+  centro: center,
+);
+
 * {
   margin: 0;
   padding: 0;

@@ -1,52 +1,43 @@
+@mixin textoGeneral($tamano, $negrita, $color, $alineacion) {
+  font-size: $tamano;
+  font-weight: $negrita;
+  color: $color;
+  text-align: $alineacion;
+}
+
 .h1General {
-    font-size: 2rem;
-    font-weight: 700;
-    color: $colorPrincipal;
-    margin-bottom: 0.5rem;
-    text-align: center;
+    @include textoGeneral(2rem, 700, $colorPrincipal, map-get($estilos, centro));
+    margin-bottom: map-get($estilos, 0.5rem);
   }
   
   .h2General__celeste {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color:$colorPrincipal ;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    text-align: center;
+    @include textoGeneral(1.5rem, 600, $colorPrincipal, map-get($estilos, centro));
+    margin-bottom: map-get($estilos, 0.5rem);
+    margin-top: map-get($estilos, 0.5rem);
     grid-area: h2Gen;
   }
   
   .h3General__celeste {
-    font-size: 1rem;
-    font-weight: 600;
-    color: $colorPrincipal;
-    margin-bottom: 0.5rem;
-    text-align: center;
+    @include textoGeneral(map-get($estilos, 1rem), 600, $colorPrincipal, map-get($estilos, centro));
+    margin-bottom: map-get($estilos, 0.5rem);
     grid-area: h3Gen;
   }
   
   .h3General {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #ffffff;
+    @include textoGeneral(1.5rem, 600, #ffffff, map-get($estilos, centro));
     margin-bottom: 1.5rem;
-    text-align: center;
   }
   
   .pGeneral {
+    @include textoGeneral(map-get($estilos, 1rem), 600, #8B8B8B);
     font-family: $fuentePrincipal;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #8B8B8B;
-    margin: 0.5rem;
+    margin: map-get($estilos, 0.5rem);
     grid-area: pGen;
   }
   
   .pGeneral2 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #8B8B8B;
-    margin: 0.5rem;
+    @include textoGeneral(map-get($estilos, 1rem), 600, #8B8B8B);
+    margin: map-get($estilos, 0.5rem);
     grid-area: pGen2;
   }
   
@@ -58,19 +49,19 @@
     background-color: $colorPrincipal;
     color: #ffffff;
     padding: 2rem 2rem 2rem 2rem;
-    margin: 1rem;
+    margin: map-get($estilos, 1rem);
     border-radius: 5rem;
   }
   
   .listaGeneral {
-    font-size: 1rem;
+    font-size: map-get($estilos, 1rem);
     font-weight: 700;
     color: $colorPrincipal;
-    padding: 1rem;
+    padding: map-get($estilos, 1rem);
   }
   
   .listaGeneral__items {
-    padding: 1rem;
+    padding: map-get($estilos, 1rem);
     display: flex;
     font-family: $fuentePrincipal;
     flex-wrap: wrap;
@@ -78,10 +69,10 @@
   
   .video {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    justify-content: map-get($estilos, centro);
+    align-items: map-get($estilos, centro);
+    padding-left: map-get($estilos, 1rem);
+    padding-right: map-get($estilos, 1rem);
   }
   
   .video__medidas {
@@ -92,18 +83,18 @@
   
   .imgGeneral {
     display: flex;
-    justify-content: center;
+    justify-content: map-get($estilos, centro);
     border-radius: 10rem;
-    padding: 0.5rem;
+    padding: map-get($estilos, 0.5rem);
     width: 100%;
   }
   
   .imgGeneral__bigScreen {
     display: flex;
-    justify-content: center;
+    justify-content: map-get($estilos, centro);
     border-radius: 10rem;
     grid-area: img;
-    padding: 1rem;
+    padding: map-get($estilos, 1rem);
     display: none;
     grid-area: imGen;
   }
@@ -111,9 +102,9 @@
   .audioGeneral {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: map-get($estilos, centro);
     border-radius: 10rem;
-    padding: 1rem;
+    padding: map-get($estilos, 1rem);
     grid-area: audioGen;
     border: $colorPrincipal 1px solid;
   }
@@ -124,7 +115,7 @@
   
   .historiasArticulo1 {
     display: grid;
-    padding: 1rem;
+    padding: map-get($estilos, 1rem);
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
     grid-template-areas: "h2Gen" "h3Gen" "pGen" "pGen2" "audioGen";
